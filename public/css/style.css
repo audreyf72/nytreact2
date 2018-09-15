@@ -1,0 +1,118 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-image: url("../brickwall.png");
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.panel {
+  margin-bottom: 5px;
+}
+
+.panel-primary>.panel-heading {
+  background-color: black;
+  border-color: black;
+}
+
+a {
+  color: maroon;
+}
+
+.btn-danger {
+  background-color: maroon;
+  border-color: rgb(89, 1, 1);
+}
+
+.btn-danger:hover {
+  background-color: rgb(89, 1, 1);
+  border-color: rgb(89, 1, 1);
+}
+
+.btn-default {
+  background-color: #054549;
+  border-color: #053337;
+}
+
+.btn-default:hover {
+  background-color: #053337;
+}
+
+.panel-primary {
+  border-color: #a7a7a7;
+}
+
+.form-control {
+  border-color: #a7a7a7;
+}
+
+.topHeader {
+  height: 170px;
+  background-color: #00666d;
+  background-image: url("../nyttitle.png"), url("../nytheader.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: center, center;
+}
+
+.pageTitle {
+  position: relative;
+  background-color: black;
+  padding: 3px;
+  height: 36px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16pt;
+  letter-spacing: 2px;
+}
+
+.row {
+  flex: 1 0 100%; /* make it wrap to its own line */
+}
+
+.gold {
+  color: gold;
+}
+
+.quote {
+  padding-top: 20px;
+}
+
+/* Shine */
+.pageTitle:after {
+	content:'';
+  top:0;
+	transform:translateX(100%);
+	width:100%;
+	height:36px;
+	position: absolute;
+	z-index:1;
+	animation: slide 4s infinite;
+	 
+  /* 
+  CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
+  */
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.3)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+/* animation */
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}
