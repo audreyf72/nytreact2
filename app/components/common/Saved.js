@@ -22,8 +22,7 @@ const Saved = (props) => {
             <div key={i} id={"result_"+(i+1)} className="well">
               <h4>{article.title}</h4>
               <p><strong>Date Published:</strong> {article.date}</p>
-              <a href={article.url} target="_blank" >{article.url}</a>
-              <br/>
+              <p><a href={article.url} target="_blank" >View this article on the New York Times website.</a></p>
               <p><strong>Date Saved: </strong> {article.dateSaved}</p>
               <button name={article._id} className="btn btn-primary" onClick={removeArticle}><i className="fa fa-trash-o" aria-hidden="true" /> Delete</button> 
             </div>

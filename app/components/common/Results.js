@@ -24,7 +24,8 @@ const Results = (props) => {
                   <h4>{article.headline.main}</h4>
                   <p>{article.byline ? article.byline.original : "No Author"}</p>
                   <p><strong>Date Published: </strong> {article.pub_date}</p>
-                  <p><a href={article.web_url} target="_blank" >{article.web_url}</a></p>
+                  <p><a href={article.web_url} target="_blank" >View this article on the New York Times website.</a></p>
+                  <br />
                   <button name={i} className="btn btn-primary" onClick={saveArticle}><i className="fa fa-floppy-o" aria-hidden="true" /> Save Article</button>
                 </div>
               ))
