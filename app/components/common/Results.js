@@ -21,12 +21,18 @@ const Results = (props) => {
         
             {props.passedResults.map((article, i) => (
                 <div key={i} id={"result_"+(i+1)} className="well">
+                
+                <div className="leftSide">
                   <h4>{article.headline.main}</h4>
                   <p>{article.byline ? article.byline.original : "No Author"}</p>
                   <p><strong>Date Published: </strong> {article.pub_date}</p>
                   <p><a href={article.web_url} target="_blank" >View this article on the New York Times website.</a></p>
-                  <br />
+                </div>
+                
+                <div className="rightSide">
                   <button name={i} className="btn btn-primary" onClick={saveArticle}><i className="fa fa-floppy-o" aria-hidden="true" /> Save Article</button>
+                </div>
+                
                 </div>
               ))
             }
