@@ -102,7 +102,7 @@ class Main extends Component {
 		return (
 			<div className="topContainer">
 			    <div className="topHeader"></div>
-			      <div className="pageTitle">News Search</div>
+			      <div className="pageTitle">Article Search</div>
 
 				<div className="container">						    
 			    <Search 
