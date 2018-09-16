@@ -24,7 +24,6 @@ const Saved = (props) => {
               <p><strong>Date Published:</strong> {article.date}</p>
               <a href={article.url} target="_blank" >{article.url}</a>
               <br/>
-              <br/>
               <p><strong>Date Saved: </strong> {article.dateSaved}</p>
               <button name={article._id} className="btn btn-primary" onClick={removeArticle}><i className="fa fa-trash-o" aria-hidden="true" /> Delete</button> 
             </div>
