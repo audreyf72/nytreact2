@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  background-color: #f1f1f2;
 }
 
 .leftSide {
@@ -35,6 +36,22 @@ h4 {
   margin-top: 0px;
 }
 
+.flexForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.flexBtns {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .container {
   display: flex;
   align-items: flex-end;
@@ -45,47 +62,54 @@ h4 {
   margin-bottom: 5px;
 }
 
+.panel-title {
+  font-size: 16pt;
+  color: #fd5b1a;
+  font-weight: bolder;
+}
+
 .panel-primary>.panel-heading {
-  background-color: black;
-  border-color: black;
+  background-image: linear-gradient(white, #e2e2e2);
+  border-color:#a7a7a7;
 }
 
 a {
-  color: maroon;
+  color: #fd5b1a;
 }
 
 .btn {
   width: 150px;
+  margin: 10px;
 }
 
 .btn-danger {
-  background-color: maroon;
-  border-color: rgb(89, 1, 1);
+  background-color: #a7a7a7;
+  border-color: #878787;
 }
 
 .btn-danger:hover {
-  background-color: rgb(89, 1, 1);
-  border-color: rgb(89, 1, 1);
+  background-color: #878787;
+  border-color: #878787;
 }
 
 .btn-default {
-  background-color: #00666d;
-  border-color: #02494f;
+  background-color: #fd5b1a;
+  border-color: #df4c12;
 }
 
 .btn-primary {
-  background-color: #00666d;
-  border-color: #02494f;
+  background-color: #fd5b1a;
+  border-color: #df4c12;
 }
 
 .btn-default:hover {
-  background-color: #02494f;
-  border-color: #02494f;
+  background-color: #df4c12;
+  border-color: #df4c12;
 }
 
 .btn-primary:hover {
-  background-color: #02494f;
-  border-color: #02494f;
+  background-color: #df4c12;
+  border-color: #df4c12;
 }
 
 .panel-primary {
@@ -103,7 +127,7 @@ a {
 
 .topHeader {
   height: 170px;
-  background-color: #00666d;
+  background-color: #fd5b1a;
   background-image: url("../nyttitle.png"), url("../nytheader.png");
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
@@ -169,6 +193,10 @@ a {
 .well {
   flex-direction: column;
   align-items: flex-start;
+}
+
+.topHeader {
+  height: 90px;
 }
 
 }
