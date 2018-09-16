@@ -8,7 +8,7 @@ const Search = props =>
         
         <div className="panel panel-primary">
           <div className="panel-heading">
-            <h3 className="panel-title"><strong>Search Parameters</strong></h3>
+            <h3 className="panel-title">Search Parameters</h3>
           </div>
           <div className="panel-body">
 

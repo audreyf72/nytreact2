@@ -14,7 +14,7 @@ const Results = (props) => {
         
         <div className="panel panel-primary">
             <div className="panel-heading">
-            <h3 className="panel-title"><strong>Search Results</strong></h3>
+            <h3 className="panel-title">Search Results</h3>
           </div> 
 
           <div id="our-results" className="panel-body">

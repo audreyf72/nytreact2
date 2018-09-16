@@ -47,14 +47,13 @@ class Main extends Component {
 	    API.getSavedArticles().then((response) => {
 	      this.setState({ savedArticles: response.data });
 	    });
-	}
+		}
 
    	removeArticle = (id) => {
 	    API.removeArticle(id).then((response) => {
 	      this.getSavedArticles();
 	    });
-	}
-
+		}
 
 	  handleSearchTerm = (event) => {
 	    this.setState({ searchTerm: event.target.value });
@@ -123,12 +122,12 @@ class Main extends Component {
 			    	savedArticles={this.state.savedArticles}
 			    	removeArticle={this.removeArticle} />
 
-				</div> 
+				</div>
+
 			</div>// End of container
 		);
 	}
 
 }
-
 
 export default Main;

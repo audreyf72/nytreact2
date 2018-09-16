@@ -14,7 +14,7 @@ const Saved = (props) => {
         
         <div className="panel panel-primary">
             <div className="panel-heading">
-            <h3 className="panel-title"><strong>Saved Articles</strong></h3>
+            <h3 className="panel-title">Saved Articles</h3>
           </div> 
 
           <div id="our-results" className="panel-body">
