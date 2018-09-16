@@ -201,4 +201,12 @@ a {
   height: 90px;
 }
 
+.flexBtns {
+  flex-direction: row;
+}
+
+.btn-primary {
+  margin: 0px;
+}
+
 }
